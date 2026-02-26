@@ -1,0 +1,55 @@
+/* ESTILO GERAL */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+img {
+    flex: 1;
+    width: 40%;
+    height: auto;
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 30px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #424040;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #000;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav li{
+    display: inline-block;
+    padding: 0 20px;
+}
