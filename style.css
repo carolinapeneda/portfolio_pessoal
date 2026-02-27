@@ -16,15 +16,19 @@ body{
     margin: 0 auto;
 }
 
-img {
-    flex: 1;
-    width: 40%;
-    height: auto;
+.flex{
+    display: flex;
 }
 
 /* ESTILO DO CABEÇALHO */
 header{
-    padding: 30px 4%;
+    padding: 20px 20px 0px 30px;
+}
+
+header img {
+    flex: 1;
+    width: 40%;
+    height: auto;
 }
 
 header > .interface{
@@ -52,4 +56,19 @@ header nav ul{
 header nav li{
     display: inline-block;
     padding: 0 20px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 0px; 
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section img {
+    width: 50%;
+    height: auto;
 }
