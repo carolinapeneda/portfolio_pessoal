@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <!-- FIM GOOGLE FONTS -->
+    <!-- BOOTSTRAP ICONS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="style.css">
     <title>PENEDA, carolina</title>
 </head>
@@ -16,16 +19,14 @@
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
                     <img src="images/carolina-logo.png" alt="logo do meu portfolio pessoal">
-                </a>
             </div><!--logo-->
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">SOBRE MIM</a></li>
-                    <li><a href="#">MEUS PROJETOS</a></li>
-                    <li><a href="#">CONTATO</a></li>
+                    <li><a href="#sobre-mim">SOBRE MIM</a></li>
+                    <li><a href="#projetos">MEUS PROJETOS</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
                 </ul>
             </nav><!--menu-desktop-->
 
@@ -34,22 +35,88 @@
 
     <main>
         <section class="topo-do-site">
-            <div class="interface">
+            <div class="interface" id="sobre-mim">
                 <div class="flex">
+
                     <div class="img-topo-site">
                         <img src="images/carolina-main.png" alt="">
-
                     </div><!--img-topo-site-->
 
                     <div class="txt-topo-site">
-                        <h1>Olá, eu sou a Carolina Peneda<spam>.</spam></h1>
-                        <p>tenho 26 anos...</p>
+                        <h1>Olá, eu sou a<br><span>Carolina Peneda</span></h1>
+                        <p>Tenho 26 anos, sou formada em Ciências Contábeis pela UFMG e atualmente
+                            curso Sistemas de Informação. Busco unir minha bagagem contábil à tecnologia, explorando ferramentas que otimizem processos, 
+                            melhorem a visualização de dados e apoiem decisões estratégicas.
+                        </p>
                     </div><!--txt-topo-site-->
 
                 </div>
             </div><!--interface-->
         </section><!--topo-do-site-->
 
+        <section class="projetos">
+            <div class="interface" id="projetos">
+                <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
+                <div class="flex">
+                    <div class="projetos-box">
+                        <i class="bi bi-card-checklist"></i>
+                        <h3>TaskFlow</h3>
+                        <p>Aplicação web para gerenciamento de tarefas com autenticação de usuários, 
+                            criação de projetos e organização por status.</p>
+                    </div><!-- projetos-box -->
+
+                    <div class="projetos-box">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <h3>Academic Insights</h3>
+                        <p>Dashboard interativo para visualização de métricas acadêmicas, permitindo análise de 
+                            desempenho por disciplina, semestre e aluno.</p>
+                    </div><!-- projetos-box -->
+
+                    <div class="projetos-box">
+                        <i class="bi bi-shop-window"></i>
+                        <h3>DevStore</h3>
+                        <p>Plataforma de e-commerce com listagem de produtos, carrinho de compras e simulação de pagamento.</p>
+                    </div><!-- projetos-box -->
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--projetos-->
+
+        <section class="contato">
+            <div class="interface" id="contato">
+                <h2 class="titulo"><span>CONTATO</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="seu nome completo" required>
+                    <input type="text" name="" id="" placeholder="seu email" required>
+                    <input type="text" name="" id="" placeholder="seu celular" required>
+                    <textarea name="" id="" placeholder="sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="image" src="images/enviar.png" alt="enviar"></div>              </form>
+            </div>
+        </section><!--contato-->
+
     </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/carolina-logo.png" alt="">
+                    </div><!--logo-footer-->
+                    <div class="social">
+                        <a href="https://www.instagram.com/carolpeneda/"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/in/carolpeneda/"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href="mailto:cdpeneda@gmail.com"><button><i class="bi bi-envelope-at"></i></button></a>
+                    </div><!--social-->
+                </div><!--flex-->
+            </div><!--line-footer-->
+            <div class="line-footer">
+
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
 </body>
 </html>
